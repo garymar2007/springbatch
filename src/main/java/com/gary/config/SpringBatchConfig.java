@@ -2,6 +2,7 @@ package com.gary.config;
 
 import com.gary.services.FileProcessorTasklet;
 import com.gary.model.Vehicle;
+import com.gary.services.UnlockFileTasklet;
 import org.springframework.batch.core.*;
 import org.springframework.batch.core.configuration.annotation.EnableBatchProcessing;
 import org.springframework.batch.core.configuration.annotation.JobBuilderFactory;
@@ -43,6 +44,9 @@ public class SpringBatchConfig {
     private FileProcessorTasklet fileProcessorTasklet;
 
     @Autowired
+    private UnlockFileTasklet unlockFileTasklet;
+
+    @Autowired
     private StepBuilderFactory stepBuilderFactory;
 
     @Bean
@@ -52,18 +56,27 @@ public class SpringBatchConfig {
         Job job = jobBuilderFactory.get(JOB_NAME)
                 .incrementer(new RunIdIncrementer())
                 .start(fileLockTaskLet())
-                .next(conditionalDecider())
-                .on("COMPLETED")
-                .to(parseXmlSaveToDB(itemReader, itemProcessor, itemWriter))
+                .next(conditionalDecider()).on("COMPLETED").to(parseXmlSaveToDB(itemReader, itemProcessor, itemWriter))
+                .next(fileUnlockTasklet())
                 .end()
                 .build();
         return job;
     }
 
     @Bean
+    public Step fileUnlockTasklet() {
+        return stepBuilderFactory.get("fileUnlocker")
+                .tasklet(unlockFileTasklet)
+                .build();
+    }
+
+    @Bean
     public JobExecutionDecider conditionalDecider(){
         return (JobExecution jobExecution, StepExecution stepExecution) -> {
             boolean isFileToBeProcessed = fileProcessorTasklet.getToBeProcessed() != null;
+            if (isFileToBeProcessed){
+                unlockFileTasklet.setFeedFileName(fileProcessorTasklet.getToBeProcessed().getName());
+            }
             return isFileToBeProcessed ? new FlowExecutionStatus("COMPLETED") : new FlowExecutionStatus("QUIET");
         };
     }
@@ -117,6 +130,7 @@ public class SpringBatchConfig {
     @StepScope
     public StaxEventItemReader<Vehicle> itemReader() throws URISyntaxException {
         File toBeProcessed = fileProcessorTasklet.getToBeProcessed();
+
         if(toBeProcessed != null) {
             Resource resource = new FileSystemResource(toBeProcessed);
             Jaxb2Marshaller xmlMarshaller = new Jaxb2Marshaller();

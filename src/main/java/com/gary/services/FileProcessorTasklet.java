@@ -60,8 +60,16 @@ public class FileProcessorTasklet implements Tasklet {
             feedFileInfoRepository.save(newFeedFileInfo);
             return true;
         }
-        return !feedFileInfo.isLocked() &&
+        return !feedFileInfo.isLocked() && !feedFileInfo.isProcessedDone() &&
                 (System.currentTimeMillis() - feedFileInfo.getLastCheckedTimeStamp().atZone(ZoneId.systemDefault()).toInstant().toEpochMilli() > 10000)
                 && (System.currentTimeMillis() - feedFileInfo.getLastDownloadedTimeStamp().atZone(ZoneId.systemDefault()).toInstant().toEpochMilli() > 10000);
+    }
+
+    public void unlockFeedFile(String feedFileName) {
+        FeedFileInfo feedFileInfo = feedFileInfoRepository.getFeedFileInfoByFeedFileName(feedFileName);
+        if(feedFileInfo != null) {
+            feedFileInfo.setLocked(false);
+            feedFileInfo.setProcessedDone(true);
+        }
     }
 }
