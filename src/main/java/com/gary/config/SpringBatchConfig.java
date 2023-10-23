@@ -3,6 +3,7 @@ package com.gary.config;
 import com.gary.services.FileProcessorTasklet;
 import com.gary.model.Vehicle;
 import com.gary.services.UnlockFileTasklet;
+import com.gary.services.WaitForLatestFeedFilesTasklet;
 import org.springframework.batch.core.*;
 import org.springframework.batch.core.configuration.annotation.EnableBatchProcessing;
 import org.springframework.batch.core.configuration.annotation.JobBuilderFactory;
@@ -47,6 +48,9 @@ public class SpringBatchConfig {
     private UnlockFileTasklet unlockFileTasklet;
 
     @Autowired
+    private WaitForLatestFeedFilesTasklet waitForLatestFeedFilesTasklet;
+
+    @Autowired
     private StepBuilderFactory stepBuilderFactory;
 
     @Bean
@@ -57,10 +61,18 @@ public class SpringBatchConfig {
                 .incrementer(new RunIdIncrementer())
                 .start(fileLockTaskLet())
                 .next(conditionalDecider()).on("COMPLETED").to(parseXmlSaveToDB(itemReader, itemProcessor, itemWriter))
+                .next(conditionalDecider()).on("QUIET").to(waitForNewFeedFiles())
                 .next(fileUnlockTasklet())
                 .end()
                 .build();
         return job;
+    }
+
+    @Bean
+    public Step waitForNewFeedFiles() {
+        return stepBuilderFactory.get("waitForNewFeedFiles")
+                .tasklet(waitForLatestFeedFilesTasklet)
+                .build();
     }
 
     @Bean
@@ -141,6 +153,7 @@ public class SpringBatchConfig {
             xmlFileReader.setFragmentRootElementName("v");
             xmlFileReader.setUnmarshaller(xmlMarshaller);
 
+            fileProcessorTasklet.setToBeProcessed(null);
             return xmlFileReader;
         }
         return null;
