@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<inv>
+    <v>
+        <VIN>JTEBT14R430008617</VIN>
+        <DealerID>1196</DealerID>
+        <StockID>11085</StockID>
+        <Year>2003</Year>
+        <Make>Toyota</Make>
+        <Model>4Runner</Model>
+        <timestamp>2023-10-24T10:04:58.405+02:00</timestamp>
+    </v>
+    <v>
+        <VIN>1C4HJWDG8EL248884</VIN>
+        <DealerID>1196</DealerID>
+        <StockID>11104</StockID>
+        <Year>2014</Year>
+        <Make>Jeep</Make>
+        <Model>Wrangler</Model>
+        <timestamp>2023-10-24T10:04:58.405+02:00</timestamp>
+    </v>
+    <v>
+        <VIN>3TMLU4EN4CM101766</VIN>
+        <DealerID>1196</DealerID>
+        <StockID>11130</StockID>
+        <Year>2012</Year>
+        <Make>Toyota</Make>
+        <Model>Tacoma Double Cab</Model>
+        <timestamp>2023-10-24T10:04:58.405+02:00</timestamp>
+    </v>
+    <v>
+        <VIN>5TFCZ5AN1GX015151</VIN>
+        <DealerID>1196</DealerID>
+        <StockID>11131</StockID>
+        <Year>2016</Year>
+        <Make>Toyota</Make>
+        <Model>Tacoma Double Cab</Model>
+        <timestamp>2023-10-24T10:04:58.405+02:00</timestamp>
+    </v>
+    <v>
+        <VIN>JTEMU5JR8M5889523</VIN>
+        <DealerID>1196</DealerID>
+        <StockID>53065</StockID>
+        <Year>2021</Year>
+        <Make>Toyota</Make>
+        <Model>4Runner</Model>
+        <timestamp>2023-10-24T10:04:58.406+02:00</timestamp>
+    </v>
+    <v>
+        <VIN>1D7HU16D15J518892</VIN>
+        <DealerID>1196</DealerID>
+        <StockID>53103</StockID>
+        <Year>2005</Year>
+        <Make>Dodge</Make>
+        <Model>Ram 1500 Regular Cab</Model>
+        <timestamp>2023-10-24T10:04:58.406+02:00</timestamp>
+    </v>
+    <v>
+        <VIN>JTEBU14R270120013</VIN>
+        <DealerID>1196</DealerID>
+        <StockID>53156</StockID>
+        <Year>2007</Year>
+        <Make>Toyota</Make>
+        <Model>4Runner</Model>
+        <timestamp>2023-10-24T10:04:58.406+02:00</timestamp>
+    </v>
+    <v>
+        <VIN>3TMCZ5ANXLM327033</VIN>
+        <DealerID>1196</DealerID>
+        <StockID>53160</StockID>
+        <Year>2020</Year>
+        <Make>Toyota</Make>
+        <Model>Tacoma Double Cab</Model>
+        <timestamp>2023-10-24T10:04:58.406+02:00</timestamp>
+    </v>
+</inv>

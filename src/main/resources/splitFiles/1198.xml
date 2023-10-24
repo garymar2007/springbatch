@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<inv>
+    <v>
+        <VIN>WA1BAAFY0M2052337</VIN>
+        <DealerID>1198</DealerID>
+        <StockID>11136</StockID>
+        <Year>2021</Year>
+        <Make>Audi</Make>
+        <Model>Q5</Model>
+        <timestamp>2023-10-24T10:04:58.405+02:00</timestamp>
+    </v>
+    <v>
+        <VIN>3C6RR7KT4JG264582</VIN>
+        <DealerID>1198</DealerID>
+        <StockID>11138</StockID>
+        <Year>2018</Year>
+        <Make>Ram</Make>
+        <Model>1500 Crew Cab</Model>
+        <timestamp>2023-10-24T10:04:58.405+02:00</timestamp>
+    </v>
+    <v>
+        <VIN>1C4RJFDJ1JC340297</VIN>
+        <DealerID>1198</DealerID>
+        <StockID>11140</StockID>
+        <Year>2018</Year>
+        <Make>Jeep</Make>
+        <Model>Grand Cherokee</Model>
+        <timestamp>2023-10-24T10:04:58.405+02:00</timestamp>
+    </v>
+    <v>
+        <VIN>JM1NB353030310769</VIN>
+        <DealerID>1198</DealerID>
+        <StockID>11144</StockID>
+        <Year>2003</Year>
+        <Make>MAZDA</Make>
+        <Model>MX-5 Miata</Model>
+        <timestamp>2023-10-24T10:04:58.406+02:00</timestamp>
+    </v>
+    <v>
+        <VIN>1FTFW1RG1MFC29272</VIN>
+        <DealerID>1198</DealerID>
+        <StockID>52709</StockID>
+        <Year>2021</Year>
+        <Make>Ford</Make>
+        <Model>F150 SuperCrew Cab</Model>
+        <timestamp>2023-10-24T10:04:58.406+02:00</timestamp>
+    </v>
+    <v>
+        <VIN>JTEMU5JR4M5905362</VIN>
+        <DealerID>1198</DealerID>
+        <StockID>53134</StockID>
+        <Year>2021</Year>
+        <Make>Toyota</Make>
+        <Model>4Runner</Model>
+        <timestamp>2023-10-24T10:04:58.406+02:00</timestamp>
+    </v>
+    <v>
+        <VIN>5TELU42N86Z228483</VIN>
+        <DealerID>1198</DealerID>
+        <StockID>53151</StockID>
+        <Year>2006</Year>
+        <Make>Toyota</Make>
+        <Model>Tacoma Double Cab</Model>
+        <timestamp>2023-10-24T10:04:58.406+02:00</timestamp>
+    </v>
+</inv>

@@ -16,6 +16,7 @@ import org.springframework.batch.item.ItemProcessor;
 import org.springframework.batch.item.ItemReader;
 import org.springframework.batch.item.ItemWriter;
 import org.springframework.batch.item.xml.StaxEventItemReader;
+import org.springframework.batch.item.xml.StaxEventItemWriter;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -112,38 +113,12 @@ public class SpringBatchConfig {
                 .build();
     }
 
-//    @Bean
-//    public FlatFileItemReader<Employee> itemReader(@Value("${input}") Resource resource) {
-//        FlatFileItemReader<Employee> flatFileItemReader = new FlatFileItemReader<>();
-//        flatFileItemReader.setResource(resource);
-//        flatFileItemReader.setName("CSV-READER");
-//        flatFileItemReader.setLinesToSkip(1); // skip the header line
-//        flatFileItemReader.setLineMapper(lineMapper());
-//
-//        return flatFileItemReader;
-//    }
-
-//    @Bean
-//    public LineMapper<Employee> lineMapper() {
-//        BeanWrapperFieldSetMapper<Employee> fieldSetMapper = new BeanWrapperFieldSetMapper<>();
-//        fieldSetMapper.setTargetType(Employee.class);
-//
-//        DelimitedLineTokenizer lineTokenizer = new DelimitedLineTokenizer();
-//        lineTokenizer.setNames(new String[]{"id", "name", "dept", "salary"});
-//
-//        DefaultLineMapper<Employee> lineMapper = new DefaultLineMapper<>();
-//        lineMapper.setLineTokenizer(lineTokenizer);
-//        lineMapper.setFieldSetMapper(fieldSetMapper);
-//
-//        return lineMapper;
-//    }
-
     @Bean
     @StepScope
-    public StaxEventItemReader<Vehicle> itemReader() throws URISyntaxException {
+    public StaxEventItemReader<Vehicle> itemReader() {
         File toBeProcessed = fileProcessorTasklet.getToBeProcessed();
 
-        if(toBeProcessed != null) {
+        if (toBeProcessed != null) {
             Resource resource = new FileSystemResource(toBeProcessed);
             Jaxb2Marshaller xmlMarshaller = new Jaxb2Marshaller();
             xmlMarshaller.setClassesToBeBound(Vehicle.class);
@@ -157,35 +132,5 @@ public class SpringBatchConfig {
             return xmlFileReader;
         }
         return null;
-
-//        return new StaxEventItemReaderBuilder<Vehicle>().name("xmlItemReader")
-//                .resource(resource)
-//                .addFragmentRootElements("v")
-//                .unmarshaller(vehicleMarshaller())
-//                .build();
     }
-
-//    @Bean()
-//    public StaxEventItemReader<Vehicle> vehicleMarshaller() {
-//        Map<String, Class> aliases = new HashMap<>();
-//        aliases.put("v", Vehicle.class);
-//        aliases.put("Dealer_ID", String.class);
-//        aliases.put("VIN", String.class);
-//        aliases.put("Stock_ID", String.class);
-//        aliases.put("Year", String.class);
-//        aliases.put("Make", String.class);
-//        aliases.put("Model", String.class);
-//
-//        XStreamMarshaller marshaller = new XStreamMarshaller();
-//        marshaller.setAliases(aliases);
-
-//        Jaxb2Marshaller xmlMarshaller = new Jaxb2Marshaller();
-//        xmlMarshaller.setClassesToBeBound(Vehicle.class);
-//
-//        StaxEventItemReader<Vehicle> xmlFileReader = new StaxEventItemReader<>();
-//        xmlFileReader.setFragmentRootElementName("v");
-//        xmlFileReader.setUnmarshaller(xmlMarshaller);
-//
-//        return xmlFileReader;
-//    }
 }
