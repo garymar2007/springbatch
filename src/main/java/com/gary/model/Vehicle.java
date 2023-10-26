@@ -1,18 +1,19 @@
 package com.gary.model;
 
+import com.gary.utils.HashCodeHelper;
+import com.gary.utils.ItemType;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.IdClass;
+import javax.persistence.*;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 import java.util.Date;
+import java.util.Objects;
 
 @Data
 @AllArgsConstructor
@@ -21,23 +22,27 @@ import java.util.Date;
 @XmlRootElement(name="v")
 @XmlAccessorType(XmlAccessType.FIELD)
 @Entity
-@IdClass(VehicleId.class)
+@IdClass(VehiclePimaryKey.class)
 public class Vehicle {
     @Id
     @XmlElement(name="VIN", required = true)
     private String vin;
     @XmlElement(name="DealerID", required = true)
-    private String dealer_Id;
+    @Column(name="DealerID")
+    private String dealerId;
     @Id
     @XmlElement(name="StockID", required = true)
-    private String stock_Id;
+    @Column(name="StockId")
+    private String stockId;
     @XmlElement(name="Year")
     private String year;
     @XmlElement(name="Make")
     private String make;
     @XmlElement(name="Model")
     private String model;
-    private Date timestamp;
+    private String hashCode;
+    @Transient
+    private ItemType itemType;
 //    @XmlElement(name="Body")
 //    private String body;
 //    @XmlElement(name="Trim")
@@ -81,4 +86,12 @@ public class Vehicle {
 //    @XmlElement(name="FuelType")
 //    private String fuelType;
 
+    public Vehicle(String vin, String dealerId, String stockId, String year, String make, String model) {
+        this.vin = vin;
+        this.dealerId = dealerId;
+        this.stockId = stockId;
+        this.year = year;
+        this.make = make;
+        this.model = model;
+    }
 }

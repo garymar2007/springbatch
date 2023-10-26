@@ -1,22 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <inv>
     <v>
-        <VIN>JTEBT14R430008617</VIN>
-        <DealerID>1196</DealerID>
-        <StockID>11085</StockID>
-        <Year>2003</Year>
-        <Make>Toyota</Make>
-        <Model>4Runner</Model>
-        <timestamp>2023-10-24T10:04:58.405+02:00</timestamp>
-    </v>
-    <v>
         <VIN>1C4HJWDG8EL248884</VIN>
         <DealerID>1196</DealerID>
         <StockID>11104</StockID>
         <Year>2014</Year>
         <Make>Jeep</Make>
         <Model>Wrangler</Model>
-        <timestamp>2023-10-24T10:04:58.405+02:00</timestamp>
+        <hashCode>1cebf997b5d0ca7319d8ec33f835272fb3e7ad5608fd498d953c36065f08d19b</hashCode>
     </v>
     <v>
         <VIN>3TMLU4EN4CM101766</VIN>
@@ -25,7 +16,7 @@
         <Year>2012</Year>
         <Make>Toyota</Make>
         <Model>Tacoma Double Cab</Model>
-        <timestamp>2023-10-24T10:04:58.405+02:00</timestamp>
+        <hashCode>db7dd74b884a78f786e65353bc8862766c35077fc0036218ae7325e37921a052</hashCode>
     </v>
     <v>
         <VIN>5TFCZ5AN1GX015151</VIN>
@@ -34,7 +25,7 @@
         <Year>2016</Year>
         <Make>Toyota</Make>
         <Model>Tacoma Double Cab</Model>
-        <timestamp>2023-10-24T10:04:58.405+02:00</timestamp>
+        <hashCode>bcca66dc956746f64037e7199c32979bd6c8aa3783b66c761c5fdc2ce41bfc99</hashCode>
     </v>
     <v>
         <VIN>JTEMU5JR8M5889523</VIN>
@@ -43,7 +34,7 @@
         <Year>2021</Year>
         <Make>Toyota</Make>
         <Model>4Runner</Model>
-        <timestamp>2023-10-24T10:04:58.406+02:00</timestamp>
+        <hashCode>e59a02de5d283be71b6b6c74e3c272de2d2b1bdc73d36c3df1654150c85ab329</hashCode>
     </v>
     <v>
         <VIN>1D7HU16D15J518892</VIN>
@@ -52,7 +43,7 @@
         <Year>2005</Year>
         <Make>Dodge</Make>
         <Model>Ram 1500 Regular Cab</Model>
-        <timestamp>2023-10-24T10:04:58.406+02:00</timestamp>
+        <hashCode>523902c920a2bfbdb990373c845d4e2e7ad34c29c0828d9f32c6aa4914ee85bb</hashCode>
     </v>
     <v>
         <VIN>JTEBU14R270120013</VIN>
@@ -61,7 +52,7 @@
         <Year>2007</Year>
         <Make>Toyota</Make>
         <Model>4Runner</Model>
-        <timestamp>2023-10-24T10:04:58.406+02:00</timestamp>
+        <hashCode>4d62576abccf3268fe3366740462e3e1b16ca1ea32fcd4dc873ddd22c621572b</hashCode>
     </v>
     <v>
         <VIN>3TMCZ5ANXLM327033</VIN>
@@ -70,6 +61,6 @@
         <Year>2020</Year>
         <Make>Toyota</Make>
         <Model>Tacoma Double Cab</Model>
-        <timestamp>2023-10-24T10:04:58.406+02:00</timestamp>
+        <hashCode>49cfde79e8ac2de762268f77c2a56a7fcfc50e117ff2cda75a50de455753425a</hashCode>
     </v>
 </inv>

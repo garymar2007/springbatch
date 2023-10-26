@@ -1,22 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <inv>
     <v>
-        <VIN>JTEBT14R740044691</VIN>
-        <DealerID>1195</DealerID>
-        <StockID>11070</StockID>
-        <Year>2004</Year>
-        <Make>Toyota</Make>
-        <Model>4Runner</Model>
-        <timestamp>2023-10-24T10:04:58.405+02:00</timestamp>
-    </v>
-    <v>
         <VIN>1C6RR6LT1HS703961</VIN>
         <DealerID>1195</DealerID>
         <StockID>11102</StockID>
         <Year>2017</Year>
         <Make>Ram</Make>
         <Model>1500 Crew Cab</Model>
-        <timestamp>2023-10-24T10:04:58.405+02:00</timestamp>
+        <hashCode>c3d6b346c176548ca962546a24a5c1fb0a54f9d9f7e25443105d4f4d6682401a</hashCode>
     </v>
     <v>
         <VIN>1FTEW1E84NFA14111</VIN>
@@ -25,7 +16,7 @@
         <Year>2022</Year>
         <Make>Ford</Make>
         <Model>F150 SuperCrew Cab</Model>
-        <timestamp>2023-10-24T10:04:58.406+02:00</timestamp>
+        <hashCode>0618cb70fc7ab74362e98f1516bdfad997ce8a7fee46fbed021d6377efd6aaaa</hashCode>
     </v>
     <v>
         <VIN>5TFCZ5AN1MX264934</VIN>
@@ -34,7 +25,7 @@
         <Year>2021</Year>
         <Make>Toyota</Make>
         <Model>Tacoma Double Cab</Model>
-        <timestamp>2023-10-24T10:04:58.406+02:00</timestamp>
+        <hashCode>815c83239b11f3590c31c347268e5c54fe0b3bb429f7a385bd7e3fb39ed2b388</hashCode>
     </v>
     <v>
         <VIN>3TMDZ5BN3LM088962</VIN>
@@ -43,7 +34,7 @@
         <Year>2020</Year>
         <Make>Toyota</Make>
         <Model>Tacoma Double Cab</Model>
-        <timestamp>2023-10-24T10:04:58.406+02:00</timestamp>
+        <hashCode>c2161cec1601e5ec0debf2090b224bf58e857554ed1ff364926ae41519c5edf6</hashCode>
     </v>
     <v>
         <VIN>JTEBU5JR5G5381635</VIN>
@@ -52,7 +43,7 @@
         <Year>2016</Year>
         <Make>Toyota</Make>
         <Model>4Runner</Model>
-        <timestamp>2023-10-24T10:04:58.406+02:00</timestamp>
+        <hashCode>551f8a3c1df99abe7c100b0a19972ce499a1fc6f492d807a4f7a908e26671db5</hashCode>
     </v>
     <v>
         <VIN>00000KZJ900020251</VIN>
@@ -61,7 +52,7 @@
         <Year>1997</Year>
         <Make>Toyota</Make>
         <Model>Landcruiser</Model>
-        <timestamp>2023-10-24T10:04:58.406+02:00</timestamp>
+        <hashCode>5f9c2ee5a21b2352be2a2be1b0304cb06ee31f85c10021edadf43ac2844ef98c</hashCode>
     </v>
     <v>
         <VIN>3TMLU4EN8EM163884</VIN>
@@ -70,7 +61,7 @@
         <Year>2014</Year>
         <Make>Toyota</Make>
         <Model>Tacoma Double Cab</Model>
-        <timestamp>2023-10-24T10:04:58.406+02:00</timestamp>
+        <hashCode>2f728fa03bcf70670b3d66814602edc882efb232a6f5f1db23a063f3d43dc726</hashCode>
     </v>
     <v>
         <VIN>4E3AK44Y3VE049766</VIN>
@@ -79,7 +70,7 @@
         <Year>1997</Year>
         <Make>Eagle</Make>
         <Model>Talon</Model>
-        <timestamp>2023-10-24T10:04:58.406+02:00</timestamp>
+        <hashCode>871c7fc75e338b23de9160df5bbee57692cbecfb477de700912a7c8481338425</hashCode>
     </v>
     <v>
         <VIN>2T3J1RFV6LC096761</VIN>
@@ -88,7 +79,7 @@
         <Year>2020</Year>
         <Make>Toyota</Make>
         <Model>RAV4</Model>
-        <timestamp>2023-10-24T10:04:58.406+02:00</timestamp>
+        <hashCode>305555944d15fa07741c7943d28398d11063e7eb31b3d8d66966d31de5bb2351</hashCode>
     </v>
     <v>
         <VIN>1G2MB35B18Y117630</VIN>
@@ -97,7 +88,7 @@
         <Year>2008</Year>
         <Make>Pontiac</Make>
         <Model>Solstice</Model>
-        <timestamp>2023-10-24T10:04:58.406+02:00</timestamp>
+        <hashCode>c2307616c4cd1211a47fe2a29d28c8abdc245b9c66aaed6db411d8abe7773e02</hashCode>
     </v>
     <v>
         <VIN>3TMLU42N76M006059</VIN>
@@ -106,7 +97,7 @@
         <Year>2006</Year>
         <Make>Toyota</Make>
         <Model>Tacoma Double Cab</Model>
-        <timestamp>2023-10-24T10:04:58.406+02:00</timestamp>
+        <hashCode>faccc16ff27f2f2fd1205d9d1f4ade90f1a507a266311525c7389d71b05db1ee</hashCode>
     </v>
     <v>
         <VIN>1FMEE5JRXNLA50536</VIN>
@@ -115,7 +106,7 @@
         <Year>2022</Year>
         <Make>Ford</Make>
         <Model>Bronco</Model>
-        <timestamp>2023-10-24T10:04:58.406+02:00</timestamp>
+        <hashCode>853836528994be8f30b07509a1f03f9e0ad93abdf8eaadf51afb81271ea8fcee</hashCode>
     </v>
     <v>
         <VIN>3TMCZ5AN8KM242318</VIN>
@@ -124,7 +115,7 @@
         <Year>2019</Year>
         <Make>Toyota</Make>
         <Model>Tacoma Double Cab</Model>
-        <timestamp>2023-10-24T10:04:58.406+02:00</timestamp>
+        <hashCode>bfb8a886d9ed61d6fe7e6fe0c0d61f615102ed26ce17ca2870281866e4f84e9c</hashCode>
     </v>
     <v>
         <VIN>3TMLU4EN2CM087818</VIN>
@@ -133,7 +124,7 @@
         <Year>2012</Year>
         <Make>Toyota</Make>
         <Model>Tacoma Double Cab</Model>
-        <timestamp>2023-10-24T10:04:58.406+02:00</timestamp>
+        <hashCode>ea2660421e6d52359f39dab93d227e390c52910a40741d01d4c413a6f6db5394</hashCode>
     </v>
     <v>
         <VIN>2GNAXTEV7M6138421</VIN>
@@ -142,7 +133,7 @@
         <Year>2021</Year>
         <Make>Chevrolet</Make>
         <Model>Equinox</Model>
-        <timestamp>2023-10-24T10:04:58.406+02:00</timestamp>
+        <hashCode>57d23bf916f556306360e8cc80e348f2a0bf6f0a66a5dd4dae61d72ef446c4db</hashCode>
     </v>
     <v>
         <VIN>3VWCB7BU7LM034242</VIN>
@@ -151,7 +142,7 @@
         <Year>2020</Year>
         <Make>Volkswagen</Make>
         <Model>Jetta</Model>
-        <timestamp>2023-10-24T10:04:58.406+02:00</timestamp>
+        <hashCode>962159847de7b607eeda39a8958bc0d02b290f9e5dc48624547e988f0dbea47c</hashCode>
     </v>
     <v>
         <VIN>2C3CDXMG0NH214253</VIN>
@@ -160,7 +151,7 @@
         <Year>2022</Year>
         <Make>Dodge</Make>
         <Model>Charger</Model>
-        <timestamp>2023-10-24T10:04:58.406+02:00</timestamp>
+        <hashCode>52181935636102c379f51ec696b3459a48d77fbbe640e7c9f507b518aea067f8</hashCode>
     </v>
     <v>
         <VIN>1N6ED1EK9PN630782</VIN>
@@ -169,7 +160,7 @@
         <Year>2023</Year>
         <Make>Nissan</Make>
         <Model>Frontier Crew Cab</Model>
-        <timestamp>2023-10-24T10:04:58.406+02:00</timestamp>
+        <hashCode>52d149559c2ebc28e9b5eba4eddb7c1ae8eab3aaec3caa4e4949f2432b3af7ed</hashCode>
     </v>
     <v>
         <VIN>5TETX22N76Z169762</VIN>
@@ -178,7 +169,7 @@
         <Year>2006</Year>
         <Make>Toyota</Make>
         <Model>Tacoma Access Cab</Model>
-        <timestamp>2023-10-24T10:04:58.406+02:00</timestamp>
+        <hashCode>a9c60671e928607d894771bc304a9dfd9c50591462798b10c4e9aed1bb6f02e9</hashCode>
     </v>
     <v>
         <VIN>JTEBT14R668035775</VIN>
@@ -187,7 +178,7 @@
         <Year>2006</Year>
         <Make>Toyota</Make>
         <Model>4Runner</Model>
-        <timestamp>2023-10-24T10:04:58.406+02:00</timestamp>
+        <hashCode>f39947517ded5c8f99de67e2392f6df87273a2581554d1ab9b613608604bcb8c</hashCode>
     </v>
     <v>
         <VIN>3VW4T7AT7EM602387</VIN>
@@ -196,7 +187,7 @@
         <Year>2014</Year>
         <Make>Volkswagen</Make>
         <Model>Beetle</Model>
-        <timestamp>2023-10-24T10:04:58.406+02:00</timestamp>
+        <hashCode>51b4293e248ab9078951d622aee7dac037be9b1e5b73d2ea0e7e7b55ec887fd0</hashCode>
     </v>
     <v>
         <VIN>1N4BL4DW3LC141059</VIN>
@@ -205,7 +196,7 @@
         <Year>2020</Year>
         <Make>Nissan</Make>
         <Model>Altima</Model>
-        <timestamp>2023-10-24T10:04:58.406+02:00</timestamp>
+        <hashCode>0b04bc6ed4ab671cb7281961038392d0b188e5e0c683a090bc3d6fc410421012</hashCode>
     </v>
     <v>
         <VIN>3VWC57BU8KM040301</VIN>
@@ -214,7 +205,7 @@
         <Year>2019</Year>
         <Make>Volkswagen</Make>
         <Model>Jetta</Model>
-        <timestamp>2023-10-24T10:04:58.406+02:00</timestamp>
+        <hashCode>4177d196ee7f3ab53bb4f2a8081207d42b204824703c18a9fec66bd423956595</hashCode>
     </v>
     <v>
         <VIN>5TFLU4EN0EX085448</VIN>
@@ -223,7 +214,7 @@
         <Year>2014</Year>
         <Make>Toyota</Make>
         <Model>Tacoma Double Cab</Model>
-        <timestamp>2023-10-24T10:04:58.406+02:00</timestamp>
+        <hashCode>0295216fd0a64f9309ffdc0fd3feb7e3b803fcff81674013257464caedef185d</hashCode>
     </v>
     <v>
         <VIN>00000SXA117006435</VIN>
@@ -231,7 +222,7 @@
         <StockID>53250</StockID>
         <Year>1996</Year>
         <Make>Toyota</Make>
-        <timestamp>2023-10-24T10:04:58.406+02:00</timestamp>
+        <hashCode>cd3e8fe3ab81960d1ad066fc675d0421788ddf47892268ca51e2f190d1284654</hashCode>
     </v>
     <v>
         <VIN>WBS1J5C5XJVD36373</VIN>
@@ -240,7 +231,7 @@
         <Year>2018</Year>
         <Make>BMW</Make>
         <Model>M2</Model>
-        <timestamp>2023-10-24T10:04:58.406+02:00</timestamp>
+        <hashCode>f323f55005bf01b1d01276f709b1a91b92d53d62089e651ca7f0857f6ae571dc</hashCode>
     </v>
     <v>
         <VIN>2HKRW2H56MH630289</VIN>
@@ -249,7 +240,7 @@
         <Year>2021</Year>
         <Make>Honda</Make>
         <Model>CR-V</Model>
-        <timestamp>2023-10-24T10:04:58.406+02:00</timestamp>
+        <hashCode>828d26fbb74e7582f48ec26a7bbcca335c32e8cafbb3c4b3272a5097845701cc</hashCode>
     </v>
     <v>
         <VIN>5YFEPMAE3MP252582</VIN>
@@ -258,7 +249,7 @@
         <Year>2021</Year>
         <Make>Toyota</Make>
         <Model>Corolla</Model>
-        <timestamp>2023-10-24T10:04:58.406+02:00</timestamp>
+        <hashCode>43a53aa9c4a4a725028645e343a6aeb03978f8e600fbbb08c7f2c28bb9d8e96c</hashCode>
     </v>
     <v>
         <VIN>JTERU5JR8N6007476</VIN>
@@ -267,6 +258,6 @@
         <Year>2022</Year>
         <Make>Toyota</Make>
         <Model>4Runner</Model>
-        <timestamp>2023-10-24T10:04:58.406+02:00</timestamp>
+        <hashCode>26aee97f1c3e3575f2c911b62e5db2fbc6a33ef13565a8474498b470c1cddb39</hashCode>
     </v>
 </inv>

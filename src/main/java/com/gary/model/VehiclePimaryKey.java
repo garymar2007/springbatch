@@ -3,6 +3,7 @@ package com.gary.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
 
 import java.io.Serializable;
@@ -10,7 +11,8 @@ import java.io.Serializable;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class VehicleId implements Serializable {
+@EqualsAndHashCode
+public class VehiclePimaryKey implements Serializable {
     private String vin;
-    private String stock_Id;
+    private String stockId;
 }

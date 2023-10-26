@@ -3,6 +3,7 @@ package com.gary.writer;
 import com.gary.model.Inventory;
 import com.gary.model.Vehicle;
 import com.gary.repository.VehicleRepository;
+import com.gary.services.FeedFileSettingService;
 import org.springframework.batch.item.ItemWriter;
 import org.springframework.batch.item.xml.builder.StaxEventItemWriterBuilder;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -17,6 +18,7 @@ import javax.xml.bind.JAXBException;
 import javax.xml.bind.Marshaller;
 import java.io.File;
 import java.io.StringWriter;
+import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 import java.util.Map;
@@ -27,6 +29,9 @@ public class CustomizedWriter implements ItemWriter<Vehicle> {
     @Autowired
     private VehicleRepository vehicleRepository;
 
+    @Autowired
+    private FeedFileSettingService feedFileSettingService;
+
     @Value("${dealer.vehicles.file.path}")
     private String dealerVehiclesFilePath;
 
@@ -34,15 +39,17 @@ public class CustomizedWriter implements ItemWriter<Vehicle> {
     public void write(List<? extends Vehicle> vehicles) throws Exception {
         vehicleRepository.saveAll(vehicles);
 
-        Resource exportFileResource = new FileSystemResource(dealerVehiclesFilePath);
+        //Resource exportFileResource = new FileSystemResource(dealerVehiclesFilePath);
         XStreamMarshaller vehicleMarshaller = new XStreamMarshaller();
         vehicleMarshaller.setAliases(Collections.singletonMap(
                 "v",
                 Vehicle.class
         ));
 
+        //Filter dealer ids which are not interested in
         Map<String, List<Vehicle>> dealerVehicles =
-                vehicles.stream().collect(Collectors.groupingBy(v -> v.getDealer_Id()));
+                vehicles.stream().filter(v-> feedFileSettingService.getRequiredDealerIds().contains(v.getDealerId()))
+                        .collect(Collectors.groupingBy(v -> v.getDealerId()));
 
         dealerVehicles.forEach((k, v) -> {
             try {
@@ -59,7 +66,7 @@ public class CustomizedWriter implements ItemWriter<Vehicle> {
         JAXBContext jaxbContext = JAXBContext.newInstance(Inventory.class);
         Marshaller jaxbMarshaller = jaxbContext.createMarshaller();
         jaxbMarshaller.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, Boolean.TRUE);
-        jaxbMarshaller.marshal(vehicleInv, new File(dealerVehiclesFilePath + "\\" + dealerId + ".xml"));
+        jaxbMarshaller.marshal(vehicleInv, new File(dealerVehiclesFilePath + File.separator + dealerId + ".xml"));
 //        //Print XML String to Console
 //        StringWriter sw = new StringWriter();
 //
